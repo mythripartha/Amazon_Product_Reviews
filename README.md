@@ -5,4 +5,5 @@ Amazon is widely used to purchase several types of products. Amazon has revoluti
 I found the datasets on dataworld and they were collected by datafiniti (a database with information about several products, businesses and property listings from all corners of the internet)
 https://data.world/datafiniti/consumer-reviews-of-amazon-products
 ![image](https://user-images.githubusercontent.com/72578347/119586134-ba64ae00-bd91-11eb-9757-8b57a9b7db05.png)
-
+## Data Cleaning
+I primarily observed where missing values occurred, dropped rows with several missing values, dropped columns that were not necessary in predicting ratings, then renamed columns so they would be easier to code with
