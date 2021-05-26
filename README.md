@@ -15,4 +15,4 @@ I resampled the data to make the dataset more balanced, so that the models would
 
 My main factor in predicting the rating would be the text of the review, I then performed text preprocessing by making the reviews lower case, removing special characters, and extra spaces. I opted to leave the stopwords in as words like "not" are very important in deciding whether or not reviews are positive. I then created my independent and dependent variables, for X (independent), I ran the reviews into a TF-IDF vectorizer and y was just the star ratings, I created 2 more datasets, one wherein all the star ratings had the same amount of reviews and another in which the reviews were classified as either positive (contained 4 and 5 star reviews and was denoted with the number 1) or negative (contained 1 and 2 star ratings and was denoted with a 0). My test set was about 0.25 while training was 0.75
 ## Modeling
-I created models for the 3 separate datasets to see how 
+I created models for the 3 separate datasets to see their prediction power. I started out with the first dataframe and performed LinearSVC (other models could not be computed with Jupyter). Then I completed 
