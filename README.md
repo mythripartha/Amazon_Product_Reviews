@@ -15,4 +15,17 @@ I resampled the data to make the dataset more balanced, so that the models would
 
 My main factor in predicting the rating would be the text of the review, I then performed text preprocessing by making the reviews lower case, removing special characters, and extra spaces. I opted to leave the stopwords in as words like "not" are very important in deciding whether or not reviews are positive. I then created my independent and dependent variables, for X (independent), I ran the reviews into a TF-IDF vectorizer and y was just the star ratings, I created 2 more datasets, one wherein all the star ratings had the same amount of reviews and another in which the reviews were classified as either positive (contained 4 and 5 star reviews and was denoted with the number 1) or negative (contained 1 and 2 star ratings and was denoted with a 0). My test set was about 0.25 while training was 0.75
 ## Modeling
-I created models for the 3 separate datasets to see their prediction power. I started out with the first dataframe and performed LinearSVC (other models could not be computed with Jupyter). I generated a classification report and noticed that the precision and recall were pretty high for 1 and 2 star ratings, but was drastically low for 4/5 star ratings. The accuracy of the model is low, but accuracy is not a valid metric for unbalanced data
+I created models for the 3 separate datasets to see their prediction power. I started out with the first dataframe and performed LinearSVC (other models could not be computed with Jupyter). I generated a classification report and noticed that the precision and recall were pretty high for 1 and 2 star ratings, but was drastically low for 4/5 star ratings. The accuracy of the model is low, but accuracy is not a valid metric for unbalanced data. I then used the undersampled data to predict star ratings, then created binary prediction models. The binary models worked the best and Random Forest gave the best metrics over LinearSVC, Gradient Boost, and Logistic Regression. Here are the final metrics and visuals for Random Forest Binary Classification
+<img width="410" alt="rf_resample" src="https://user-images.githubusercontent.com/72578347/119848113-2b5eaf80-bed1-11eb-8341-3dc90a257a92.PNG">
+![rf_roc](https://user-images.githubusercontent.com/72578347/119848115-2bf74600-bed1-11eb-936d-de656a642028.png)
+<img width="389" alt="rf_binary" src="https://user-images.githubusercontent.com/72578347/119848116-2bf74600-bed1-11eb-88cf-819dfc69d85c.PNG">
+<img width="84" alt="rf_connf" src="https://user-images.githubusercontent.com/72578347/119848118-2bf74600-bed1-11eb-8e4f-7d1e5541df3e.PNG">
+## Future Work
+In the future, I can add to this model by:
+*Performing Sentiment Analysis
+*Creating a Recommendation System
+*Working with Deep Learning/Neural Networks
+*Performing more text Pre-Processing
+
+## Acknowledgements:
+I would like to thank Ricardo Alanis for being a wonderful mentor and providing excellent advice to make me the coder and data scientist I am today
