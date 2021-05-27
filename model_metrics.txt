@@ -1,0 +1,9 @@
+Final model: Binary Random Forest
+Average Precision (positice/negative reviews): 0.90
+Average Recall (positice/negative reviews): 0.90
+Accuracy: 0.90
+Conf matrix:
+True Positives: 123
+True Negatives: 15
+False Positives: 13
+False Negatives: 125
