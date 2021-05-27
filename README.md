@@ -22,10 +22,10 @@ I created models for the 3 separate datasets to see their prediction power. I st
 <img width="84" alt="rf_connf" src="https://user-images.githubusercontent.com/72578347/119848118-2bf74600-bed1-11eb-8e4f-7d1e5541df3e.PNG">
 ## Future Work
 In the future, I can add to this model by:
-*Performing Sentiment Analysis
-*Creating a Recommendation System
-*Working with Deep Learning/Neural Networks
-*Performing more text Pre-Processing
+* Performing Sentiment Analysis
+* Creating a Recommendation System
+* Working with Deep Learning/Neural Networks
+* Performing more text Pre-Processing
 
 ## Acknowledgements:
 I would like to thank Ricardo Alanis for being a wonderful mentor and providing excellent advice to make me the coder and data scientist I am today
